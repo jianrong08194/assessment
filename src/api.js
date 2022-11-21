@@ -20,6 +20,7 @@ export async function getPosts() {
     });
 }
 
+// retrieve post detail
 export async function getPost(id) {
     return new Promise((resolve, reject) => {
         try {
@@ -38,7 +39,7 @@ export async function getPost(id) {
         }
     });
 }
-
+// retrieve all post's categories
 export async function getCategories() {
     return new Promise((resolve, reject) => {
         try {

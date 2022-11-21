@@ -5,6 +5,10 @@ const ListRow = (props) => {
     <Card.Header> 
     <Row>
       {props.post.categories.map((category => {
+        /* post's categories, for testing purposes,
+           however it somewhat fit in with the card design 
+           hence why is still remain here
+        */
         return (   
         <Col lg="2" key={category.id} >
         <Badge bg={props.search === category.name? "info" : "secondary"}>{category.name}</Badge>
